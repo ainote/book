@@ -67,9 +67,48 @@
   - ArrayList扩容机制分析
     - [ArrayList 扩容机制分析](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/collection/ArrayList%E6%BA%90%E7%A0%81%2B%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6%E5%88%86%E6%9E%90.md#3-arraylist-%E6%89%A9%E5%AE%B9%E6%9C%BA%E5%88%B6%E5%88%86%E6%9E%90)
 - Map接口
+  - HashMap和HashTable有何不同？
+    - [HashMap和HashTable有何不同？](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/HashMap-HashTable-ConcurrentHashMap)  
+    - [HashMap与HashTable的区别](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98.md#141-hashmap-%E5%92%8C-hashtable-%E7%9A%84%E5%8C%BA%E5%88%AB)
+  - HashMap 和 HashSet 区别
+    - [HashMap 和 HashSet 区别](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98.md#142-hashmap-%E5%92%8C-hashset-%E5%8C%BA%E5%88%AB)  
+  - HashMap 和 TreeMap 区别
+    - [HashMap 和 TreeMap 区别](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98.md#143-hashmap-%E5%92%8C-treemap-%E5%8C%BA%E5%88%AB)
+  - HashMap中数据域的概念解析
+    - [HashMap中傻傻分不清楚的那些概念](https://www.hollischuang.com/archives/2416)  
+  - HashMap中hash方法的原理
+    - [HashMap中hash方法的原理](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/hash-in-hashmap)  
+  - 为什么HashMap的默认容量设置成16?
+    - [为什么HashMap的默认容量设置成16](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/hashmap-default-capacity)
+  - 为什么HashMap的默认负载因子设置成0.75?
+    - [为什么HashMap的默认负载因子设置成0.75](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/hashmap-default-loadfactor)
+  - 为什么建议设置HashMap的初始容量，设置多少合适
+    - [为什么建议设置HashMap的初始容量，设置多少合适](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/hashmap-init-capacity)
+  - HashMap 的长度为什么是 2 的幂次方?
+    - [HashMap 的长度为什么是 2 的幂次方](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98.md#146-hashmap-%E7%9A%84%E9%95%BF%E5%BA%A6%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF-2-%E7%9A%84%E5%B9%82%E6%AC%A1%E6%96%B9)  
+  - HashMap 多线程操作导致死循环问题
+    - [疫苗：JAVA HASHMAP的死循环](https://coolshell.cn/articles/9606.html)
+  - HashMap 有哪几种常见的遍历方式?
+    - [HashMap 的 7 种遍历方式与性能分析](https://mp.weixin.qq.com/s/Zz6mofCtmYpABDL1ap04ow)
+  - ConcurrentHashMap 和 Hashtable 的区别
+    - [ConcurrentHashMap 和 Hashtable 的区别](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98.md#149-concurrenthashmap-%E5%92%8C-hashtable-%E7%9A%84%E5%8C%BA%E5%88%AB)
+  - 如何在遍历的同时删除ArrayList中的元素
+    - [如何在遍历的同时删除ArrayList中的元素](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/delete-while-iterator)  
 - Set接口
-- Queue接口
-
+  - Set如何保证元素不重复?
+    - [Set如何保证元素不重复?](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/set-repetition)  
+  - 比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同
+    - [比较 HashSet、LinkedHashSet 和 TreeSet 三者的异同](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98.md#133-%E6%AF%94%E8%BE%83-hashsetlinkedhashset-%E5%92%8C-treeset-%E4%B8%89%E8%80%85%E7%9A%84%E5%BC%82%E5%90%8C)  
+  - HashSet如何判断元素是否重复?
+    - [HashSet 如何检查重复](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/collection/Java%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98.md#144-hashset-%E5%A6%82%E4%BD%95%E6%A3%80%E6%9F%A5%E9%87%8D%E5%A4%8D)
+    - 扩充知识：[Java hashCode() 和 equals()的若干问题解答](https://www.cnblogs.com/skywang12345/p/3324958.html)  
+- 其他
+  - Arrays.asList 方法使用注意事项
+    - [Arrays.asList获得的List使用时需要注意什么](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/Arrays-asList)
+    - [Arrays.asList(T...)](https://hub.fastgit.org/Snailclimb/JavaGuide/blob/master/docs/java/JAD%E5%8F%8D%E7%BC%96%E8%AF%91tricks.md#arraysaslistt)
+  - fail-fast 和 fail-safe
+    - [fail-fast 和 fail-safe](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/fail-fast-vs-fail-safe)
+  -  
 ## 枚举与注解
 
 ## IO流
