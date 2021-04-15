@@ -192,3 +192,119 @@
   - [单例与序列化的那些事儿](https://www.hollischuang.com/archives/1144)
 - 语法糖
   - [Java中语法糖原理、解语法糖](http://hollischuang.gitee.io/tobetopjavaer/#/basics/java-basic/syntactic-sugar)
+
+# 并发与线程安全
+
+## 多线程基本概念
+
+- 线程与进程、并行与并发、线程上下文切换、线程安全
+  - [深入理解Java并发编程（一）：到底什么是线程安全](https://www.hollischuang.com/archives/3060)
+  - [什么是上下文切换?](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md#7-%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%8A%E4%B8%8B%E6%96%87%E5%88%87%E6%8D%A2)
+  - [说说并发与并行的区别?](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md#3-%E8%AF%B4%E8%AF%B4%E5%B9%B6%E5%8F%91%E4%B8%8E%E5%B9%B6%E8%A1%8C%E7%9A%84%E5%8C%BA%E5%88%AB)
+- 线程死锁
+  - [什么是线程死锁?如何避免死锁?](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md#8-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E7%A8%8B%E6%AD%BB%E9%94%81%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E6%AD%BB%E9%94%81)
+- 线程状态
+  - [说说线程的生命周期和状态?](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E5%9F%BA%E7%A1%80%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md#6-%E8%AF%B4%E8%AF%B4%E7%BA%BF%E7%A8%8B%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%92%8C%E7%8A%B6%E6%80%81)
+- 创建线程的几种方式
+  - [创建线程有哪几种方式？](https://zhuanlan.zhihu.com/p/338634085)
+- 线程池
+  - [线程池相关的问题](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md#4-%E7%BA%BF%E7%A8%8B%E6%B1%A0)
+  - [Java中线程池，你真的会用吗？](https://www.hollischuang.com/archives/2888)
+  - [java线程池学习总结](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93.md)
+
+## 线程安全与同步
+
+- 什么是线程安全?
+  - [深入理解Java并发编程（一）：到底什么是线程安全](https://www.hollischuang.com/archives/3060)
+  - [[译]Java虚拟机是如何执行线程同步的](https://www.hollischuang.com/archives/1876)
+- CAS
+  - [彻底理解synchronized关键字#CAS操作](https://www.codercc.com/backend/basic/juc/concurrent-keywords/synchronized.html#_3-1-cas%E6%93%8D%E4%BD%9C)
+- Java内存模型(JMM)
+  - [再有人问你Java内存模型是什么，就把这篇文章发给他](https://www.hollischuang.com/archives/2550)
+  - [并发编程——原子性，可见性和有序性](https://blog.csdn.net/eff666/article/details/66473088)
+  - [java内存模型以及happens-before规则](https://www.codercc.com/backend/basic/juc/concurrent-theory/jmm-happens-before.html)
+  - [内存模型是怎么解决缓存一致性问题的？](https://www.hollischuang.com/archives/2662)
+- synchronized关键字
+  - synchronized关键字的使用
+    - [synchronized 关键字最主要的三种使用方式](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/multi-thread/2020%E6%9C%80%E6%96%B0Java%E5%B9%B6%E5%8F%91%E8%BF%9B%E9%98%B6%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93.md#12-%E8%AF%B4%E8%AF%B4%E8%87%AA%E5%B7%B1%E6%98%AF%E6%80%8E%E4%B9%88%E4%BD%BF%E7%94%A8-synchronized-%E5%85%B3%E9%94%AE%E5%AD%97)
+  - synchronized实现原理
+    - [深入理解多线程（一）——Synchronized的实现原理](https://www.hollischuang.com/archives/1883)
+    - [深入理解多线程（四）—— Moniter的实现原理](https://www.hollischuang.com/archives/2030)
+    - [彻底理解synchronized关键字](https://www.codercc.com/backend/basic/juc/concurrent-keywords/synchronized.html)
+  - synchronized锁优化
+    - [Java6及以上版本对synchronized的优化](https://www.cnblogs.com/wuqinglong/p/9945618.html)
+    - [彻底理解synchronized关键字#synchronized优化](https://www.codercc.com/backend/basic/juc/concurrent-keywords/synchronized.html#_3-synchronized%E4%BC%98%E5%8C%96)
+    - [深入理解多线程（五）—— Java虚拟机的锁优化技术](https://www.hollischuang.com/archives/2344)
+  - synchronized与原子性、有序性、可见性
+    - [再有人问你synchronized是什么，就把这篇文章发给他](https://www.hollischuang.com/archives/2637)
+- volatile关键字
+  - [深入理解Java中的volatile关键字](https://www.hollischuang.com/archives/2648)
+  - [彻底理解volatile关键字](https://www.codercc.com/backend/basic/juc/concurrent-keywords/volatile.html)
+  - [深入理解 Java 内存模型（四）——volatile](https://www.infoq.cn/article/java-memory-model-4/)
+- final关键字
+  - [深入理解 Java 内存模型（六）——final](https://www.infoq.cn/article/java-memory-model-6?utm_source=related_read_bottom&utm_medium=article)
+  - [你以为你真的了解final吗](https://www.codercc.com/backend/basic/juc/concurrent-keywords/final.html)
+- 补充阅读
+  - [深入理解 Java 内存模型（一）——基础](https://www.infoq.cn/article/java-memory-model-1)
+  - [深入理解 Java 内存模型（二）——重排序](https://www.infoq.cn/article/java-memory-model-2)
+  - [深入理解 Java 内存模型（三）——顺序一致性](https://www.infoq.cn/article/java-memory-model-3)
+  - [深入理解 Java 内存模型（四）——volatile](https://www.infoq.cn/article/java-memory-model-4)
+  - [深入理解 Java 内存模型（五）——锁](https://www.infoq.cn/article/java-memory-model-5)
+  - [深入理解 Java 内存模型（六）——final](https://www.infoq.cn/article/java-memory-model-6)
+  - [深入理解 Java 内存模型（七）——总结](https://www.infoq.cn/article/java-memory-model-7)
+- Lock与AQS(AbstractQueuedSynchronizer)
+  - Lock与AQS概念
+    - [初识Lock与AbstractQueuedSynchronizer(AQS)](https://www.codercc.com/backend/basic/juc/lock/Lock-AbstractQueuedSynchronizer.html)
+    - [深入理解AQS](https://www.codercc.com/backend/basic/juc/lock/AbstractQueuedSynchronizer-theory.html)
+  - ReentrantLock
+    - [深入理解ReentrantLock](https://www.codercc.com/backend/basic/juc/lock/ReentrantLock.html#_1-reentrantlock%E7%9A%84%E4%BB%8B%E7%BB%8D)
+  - ReentrantReadWriteLock
+    - [深入理解ReentrantReadWriteLock](https://www.codercc.com/backend/basic/juc/lock/ReentrantReadWriteLock.html) 
+  - Condition
+    - [详解Condition](https://www.codercc.com/backend/basic/juc/lock/condition.html)
+  - LockSupport
+    - [LockSupport工具](https://www.codercc.com/backend/basic/juc/lock/LockSupport.html)
+  - CountDownLatch与CyclicBarrier
+    - [大白话说java并发工具类-CountDownLatch，CyclicBarrier](https://www.codercc.com/backend/basic/juc/concurrent-util/CountDownLatch-CyclicBarrier.html)
+  - Semaphore与Exchanger
+    - [大白话说java并发工具类-Semaphore，Exchanger](https://www.codercc.com/backend/basic/juc/concurrent-util/Semaphore-Exchanger.html)  
+- 并发容器
+  - ConcurrentHashMap
+    - [深入理解ConcurrentHashMap(1.8)](https://www.codercc.com/backend/basic/juc/concurrent-container/ConcurrentHashMap.html)
+  - CopyOnWriteArrayList
+    - [深入理解CopyOnWriteArrayList](https://www.codercc.com/backend/basic/juc/concurrent-container/CopyOnWriteArrayList.html)
+  - ConcurrentLinkedQueue
+    - [深入理解ConcurrentLinkedQueue](https://www.codercc.com/backend/basic/juc/concurrent-container/ConcurrentLinkedQueue.html)
+  - ThreadLocal
+    - [深入理解ThreadLocal](https://www.codercc.com/backend/basic/juc/concurrent-container/ThreadLocal.html)
+    - [深入理解ThreadLocal内存泄漏](https://www.codercc.com/backend/basic/juc/concurrent-container/threadlocal-memory-leak.html)
+  - BlockingQueue
+    - [阻塞队列汇总](https://www.codercc.com/backend/basic/juc/concurrent-container/BlockingQueue.html)
+    - [深入理解ArrayBlockingQueue和LinkedBlockingQueue](https://www.codercc.com/backend/basic/juc/concurrent-container/ArrayBlockingQueue-LinkedBlockingQueue.html)
+- Atomic
+  - 原子操作类总结
+    - [Java中atomic包中的原子操作类总结](https://www.codercc.com/backend/basic/juc/atomic/atomic-util.html)
+
+## JVM
+
+- Java内存区域(运行时数区域)
+  - [Java运行时数据区域](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md#%E4%BA%8C-%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F)
+  - [大白话带你认识JVM#运行时数据区](https://juejin.cn/post/6844904048013869064#heading-18)
+  - 扩展阅读
+    - [对象和数组并不是都在堆上分配内存的。](https://www.hollischuang.com/archives/2398)
+    - [万万没想到，JVM内存结构的面试题可以问的这么难？](https://www.hollischuang.com/archives/3875)
+- HotSpot虚拟机对象
+  >对象创建过程  
+  >对象内存布局  
+  >对象访问定位
+  [HotSpot 虚拟机对象探秘](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/Java%E5%86%85%E5%AD%98%E5%8C%BA%E5%9F%9F.md#%E4%B8%89-hotspot-%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AF%B9%E8%B1%A1%E6%8E%A2%E7%A7%98)
+- 类加载器
+  - [深度分析Java的ClassLoader机制（源码级别）](https://www.hollischuang.com/archives/199)
+  - [Java类的加载、链接和初始化](https://www.hollischuang.com/archives/201)
+  - [类加载过程](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/%E7%B1%BB%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B.md)
+  - [双亲委派机制详解(我竟然被”双亲委派”给虐了！)](https://www.hollischuang.com/archives/6055)
+- Class类文件结构
+  - [Class类文件结构详解](https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/jvm/%E7%B1%BB%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.md)
+- Class常量池、字符串常量池及运行时常量池
+  - [《Java虚拟机原理图解》 1.2.2、Class文件中的常量池详解（上）](https://blog.csdn.net/luanlouis/article/details/39960815)
+  - [Java基础-JVM内存管理-常量池与运行时常量池](https://www.jianshu.com/p/e49bab4e44a6)
